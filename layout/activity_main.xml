@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2A9D8F"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/centerverticalline" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/centerhorizontalline" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-300dp"
+        android:src="@drawable/blink2"
+        android:id="@+id/gif"
+        />
+
+    <RelativeLayout
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/centerverticalline"
+        android:layout_toLeftOf="@id/bnews"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="35dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/bbg"
+        android:id="@+id/bmap">
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_above="@id/tmap"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/map"></ImageView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/tmap"
+            android:text="Map"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"></TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/centerverticalline"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="35dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/bbg2"
+        android:id="@+id/bnews">
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_above="@id/tnews"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/news"></ImageView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/tnews"
+            android:text="News"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"></TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/centerverticalline"
+        android:layout_toRightOf="@id/bnews"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="35dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/bbg"
+        android:id="@+id/babout">
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_above="@id/tabout"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/info"></ImageView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/tabout"
+            android:text="About "
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"></TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

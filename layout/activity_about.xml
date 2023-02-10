@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9C46A"
+    tools:context=".about">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/centerverticalline" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/centerhorizontalline" />
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="650dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/sbg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/stitle"
+            android:text="About"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:layout_marginTop="10dp"></TextView>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/stitle"
+            android:text="Meet the Developers!"
+            android:textColor="@color/black"
+            android:id="@+id/stitle2"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"
+            ></TextView>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/stitle2"
+            android:text="Program Code: RCS2515A"
+            android:id="@+id/scode"
+            android:textSize="10sp"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"
+            ></TextView>
+        
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="150dp"
+            android:layout_below="@id/scode"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/sera">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sera"></ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sera"
+            android:text="SITI SHAHIRAH BINTI SABRAN"
+            android:textColor="@color/black"
+            android:id="@+id/nsera"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nsera"
+            android:text="2020477312"
+            android:textColor="@color/black"
+            android:id="@+id/nosera"
+            android:textSize="10sp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="20dp"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nosera"
+            android:text="Backend Developer"
+            android:textColor="@color/black"
+            android:id="@+id/jsera"
+            android:textSize="10sp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="20dp"
+            ></TextView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="150dp"
+            android:layout_toRightOf="@id/sera"
+            android:layout_below="@id/scode"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/isha">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/isha"></ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/isha"
+            android:layout_toRightOf="@id/sera"
+            android:text="NURHASNISHA BINTI SHAMSUHAIDI"
+            android:textColor="@color/black"
+            android:id="@+id/nisha"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nisha"
+            android:layout_toEndOf="@id/nosera"
+            android:text="2020476536"
+            android:textColor="@color/black"
+            android:id="@+id/noisha"
+            android:textSize="10sp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="90dp"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/noisha"
+            android:layout_toEndOf="@id/jsera"
+            android:text="Backend Developer"
+            android:textColor="@color/black"
+            android:id="@+id/jisha"
+            android:textSize="10sp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="60dp"
+            ></TextView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="150dp"
+            android:layout_below="@id/nosera"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/cikpah">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cikpah"></ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cikpah"
+            android:text="NUR ARIFAH DIYANAH BINTI MUHAMMAD RIZAL"
+            android:textColor="@color/black"
+            android:id="@+id/ncikpah"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ncikpah"
+            android:text="2020477522"
+            android:textColor="@color/black"
+            android:id="@+id/nocikpah"
+            android:textSize="10sp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="20dp"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nocikpah"
+            android:text="Graphic Designer"
+            android:textColor="@color/black"
+            android:id="@+id/jcikpah"
+            android:textSize="10sp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="20dp"
+            ></TextView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="150dp"
+            android:layout_toRightOf="@id/cikpah"
+            android:layout_below="@id/noisha"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/peqoh">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/peqoh"></ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/peqoh"
+            android:layout_toRightOf="@id/cikpah"
+            android:text="NUR FAIQAH BALQIS BINTI MOHAMAD"
+            android:textColor="@color/black"
+            android:id="@+id/npeqoh"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/npeqoh"
+            android:layout_toEndOf="@id/nocikpah"
+            android:text="2020846686"
+            android:textColor="@color/black"
+            android:id="@+id/nopeqoh"
+            android:textSize="10sp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="90dp"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nopeqoh"
+            android:layout_toEndOf="@id/jcikpah"
+            android:text="Programmer"
+            android:textColor="@color/black"
+            android:id="@+id/jpeqoh"
+            android:textSize="10sp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="70dp"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jpeqoh"
+            android:layout_centerHorizontal="true"
+            android:text="©2023 Shahirah, Hasnisha, Faiqah, Arifah"
+            android:id="@+id/copyright"
+            android:textSize="10sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="113dp"
+            ></TextView>
+
+        <android.widget.Button
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/copyright"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:text="Get the Code on GitHub!"
+            android:textColor="@color/black"
+            android:background="@drawable/bbg"
+            android:layout_marginTop="10dp"
+            android:id="@+id/bgithub"></android.widget.Button>
+
+    </RelativeLayout>
+
+</RelativeLayout>
